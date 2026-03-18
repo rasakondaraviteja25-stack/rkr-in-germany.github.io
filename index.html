@@ -20,28 +20,10 @@
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(234, 179, 8, 0.4);
-            filter: brightness(1.1);
         }
         
-        .btn-outline {
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-        .btn-outline:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: white;
-            transform: translateY(-2px);
-        }
-
         .card-shadow { transition: all 0.4s ease; }
-        .card-shadow:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
-        
-        @keyframes pulse-red {
-            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
-            70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
-        }
-        .youtube-pulse { animation: pulse-red 2s infinite; }
+        .card-shadow:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
     </style>
 </head>
 <body>
@@ -50,31 +32,27 @@
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
             <span class="text-xl font-extrabold text-slate-900 tracking-tight">RKR <span class="text-yellow-500">IN GERMANY</span></span>
             <div class="hidden md:flex gap-8 text-sm font-bold text-slate-600">
-                <a href="#youtube" class="hover:text-yellow-600 transition">YouTube</a>
-                <a href="#connect" class="hover:text-yellow-600 transition">Mentorship</a>
+                <a href="#mentorship" class="hover:text-yellow-600 transition">Expert Mentorship</a>
+                <a href="#about" class="hover:text-yellow-600 transition">About Me</a>
             </div>
-            <a href="https://topmate.io/rkr_in_germany" target="_blank" class="btn-primary text-slate-900 px-6 py-2.5 rounded-full font-extrabold text-sm">BOOK A CALL</a>
+            <a href="https://topmate.io/rkr_in_germany" target="_blank" class="btn-primary text-slate-900 px-6 py-2.5 rounded-full font-extrabold text-sm uppercase">Book Mentorship</a>
         </div>
     </nav>
 
-    <header class="pt-40 pb-24 hero-gradient text-white overflow-hidden">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
-            <div class="md:w-1/2 text-center md:text-left relative z-10">
-                <span class="inline-block bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-6">Expert Student Mentorship</span>
-                <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight">Your Roadmap to <br><span class="text-yellow-400">German Success</span></h1>
-                <p class="text-slate-400 text-lg md:text-xl mb-10 leading-relaxed max-w-lg">Providing Telugu students with the raw, honest guidance needed to navigate admissions and student life in Germany.</p>
-                <div class="flex flex-wrap justify-center md:justify-start gap-5">
-                    <a href="https://topmate.io/rkr_in_germany" target="_blank" class="btn-primary text-slate-900 px-10 py-4 rounded-2xl font-extrabold text-base">START YOUR JOURNEY</a>
-                    <a href="#youtube" class="btn-outline text-white px-10 py-4 rounded-2xl font-extrabold text-base">WATCH VIDEOS</a>
-                </div>
+    <header class="pt-40 pb-24 hero-gradient text-white">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-2/3">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-6">RKR IN <span class="text-yellow-400">GERMANY</span></h1>
+                <p class="text-slate-400 text-lg mb-8 max-w-lg">Your trusted Professional Guide for navigating student life and admissions in Germany.</p>
+                <a href="https://topmate.io/rkr_in_germany" target="_blank" class="btn-primary text-slate-900 px-8 py-4 rounded-xl font-extrabold inline-block uppercase">Get Started</a>
             </div>
-            <div class="md:w-1/2 flex justify-center relative">
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                    <img src="https://topmate-staging.s3.ap-south-1.amazonaws.com/9v8SgYtS8i8F4Z3a4B3c2D1e" onerror="this.src='https://via.placeholder.com/400'" class="relative w-80 h-80 md:w-96 md:h-96 rounded-[2rem] border-2 border-white/10 object-cover shadow-2xl transition duration-500 group-hover:scale-[1.02]">
-                    <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-2xl border border-slate-100">
-                        <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-1">Current Status</p>
-                        <p class="font-extrabold text-slate-900 flex items-center gap-2">
+            
+            <div class="md:w-1/3 flex justify-end">
+                <div class="relative inline-block">
+                    <img src="https://topmate-staging.s3.ap-south-1.amazonaws.com/9v8SgYtS8i8F4Z3a4B3c2D1e" class="w-64 h-64 rounded-3xl border-4 border-white/10 object-cover shadow-2xl">
+                    <div class="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-xl">
+                        <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Status</p>
+                        <p class="font-bold text-slate-900 text-sm flex items-center gap-2">
                             <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                             PROFESSIONAL GUIDE
                         </p>
@@ -84,66 +62,46 @@
         </div>
     </header>
 
-    <section id="youtube" class="py-24 bg-white">
+    <section id="mentorship" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="rounded-[2.5rem] overflow-hidden shadow-2xl border-[12px] border-slate-900 aspect-video relative">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            <h2 class="text-3xl font-black mb-12 text-center uppercase tracking-tight">Expert Mentorship</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">Direct Guidance from a Professional</h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Stop relying on outdated forums. Get personalized strategies for your German master's journey, from APS verification to finding accommodation in student cities.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-sm font-semibold text-slate-700"><i class="fas fa-check-circle text-green-500"></i> Admission Roadmap</li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-slate-700"><i class="fas fa-check-circle text-green-500"></i> Visa Interview Prep</li>
+                        <li class="flex items-center gap-3 text-sm font-semibold text-slate-700"><i class="fas fa-check-circle text-green-500"></i> Part-time Job Guidance</li>
+                    </ul>
+                    <a href="https://topmate.io/rkr_in_germany" target="_blank" class="btn-primary text-slate-900 px-8 py-4 rounded-xl font-extrabold uppercase">Book Your Slot</a>
                 </div>
-                <div class="bg-slate-50 p-12 rounded-[3rem] border border-slate-100 card-shadow">
-                    <div class="flex items-center gap-5 mb-8">
-                        <div class="w-16 h-16 rounded-2xl bg-yellow-500 flex items-center justify-center text-slate-900 text-2xl font-black shadow-lg shadow-yellow-500/20">R</div>
-                        <div>
-                            <h3 class="font-extrabold text-2xl">RKR in Germany</h3>
-                            <p class="text-red-600 font-black text-xs tracking-widest uppercase">YouTube Creator</p>
-                        </div>
+                
+                <div class="w-full md:max-w-sm ml-auto">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-slate-900 aspect-video">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/ZNCpNGpV_E0" title="RKR YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                    <div class="mb-10">
-                        <div class="text-7xl font-black text-slate-900 tracking-tighter mb-2">1,000+</div>
-                        <p class="text-lg text-slate-500 font-bold">Trusted Community Members</p>
-                    </div>
-                    <a href="https://youtube.com/@rkr_in_germany" target="_blank" class="w-full text-center bg-red-600 text-white py-5 rounded-2xl font-black tracking-wide hover:bg-red-700 transition youtube-pulse block">SUBSCRIBE TO CHANNEL</a>
+                    <p class="text-center mt-4 text-xs font-bold text-slate-400 uppercase tracking-widest">Latest Guide Video</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="connect" class="py-24 bg-slate-900">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Expert Mentorship</h2>
-                <p class="text-slate-400 text-lg max-w-2xl mx-auto">Skip the expensive consultancies. Get direct, practical advice from someone living the journey.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-[2.5rem] card-shadow border-t-[10px] border-yellow-500">
-                    <div class="flex justify-between items-start mb-8">
-                        <div class="w-14 h-14 bg-yellow-50 rounded-2xl flex items-center justify-center">
-                            <i class="fas fa-video text-2xl text-yellow-600"></i>
-                        </div>
-                        <span class="bg-yellow-100 text-yellow-800 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Priority Slots</span>
-                    </div>
-                    <h3 class="text-2xl font-extrabold mb-3">1:1 Consultation</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8">Deep dive into your profile, university shortlisting, and visa strategy.</p>
-                    <a href="https://topmate.io/rkr_in_germany" target="_blank" class="block w-full bg-slate-900 text-white text-center py-4 rounded-xl font-extrabold hover:bg-slate-800 transition">BOOK SESSION</a>
-                </div>
-                <div class="bg-white p-10 rounded-[2.5rem] card-shadow">
-                    <i class="fab fa-whatsapp text-4xl text-green-500 mb-8 block"></i>
-                    <h3 class="text-2xl font-extrabold mb-3">WhatsApp Feed</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8">Instant updates on deadlines, news, and daily student life hacks.</p>
-                    <a href="https://whatsapp.com/channel/0029VbC70YKHbFVDUfGD380H" target="_blank" class="block w-full border-2 border-slate-100 text-slate-900 text-center py-4 rounded-xl font-extrabold hover:bg-slate-50 transition">JOIN CHANNEL</a>
-                </div>
-                <div class="bg-white p-10 rounded-[2.5rem] card-shadow">
-                    <i class="fab fa-telegram-plane text-4xl text-blue-500 mb-8 block"></i>
-                    <h3 class="text-2xl font-extrabold mb-3">Global Group</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8">Connect with thousands of peers and share resources in real-time.</p>
-                    <a href="https://t.me/+Iof3JG9zxyBjMDA1" target="_blank" class="block w-full border-2 border-slate-100 text-slate-900 text-center py-4 rounded-xl font-extrabold hover:bg-slate-50 transition">JOIN GROUP</a>
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white p-12 rounded-[2.5rem] shadow-sm border border-slate-100">
+                <h2 class="text-3xl font-black mb-8 text-slate-900 border-l-4 border-yellow-500 pl-6">ABOUT ME</h2>
+                <div class="prose prose-slate max-w-none text-slate-600 leading-relaxed font-medium">
+                    <p class="mb-4">Hello! I am Rasakonda Raviteja (RKR), currently pursuing my Master's in Data Science at the University of Europe for Applied Sciences in Germany.</p>
+                    <p class="mb-4">Through my Instagram (rkr_in_germany) and YouTube channel, I have dedicated myself to helping Telugu students navigate the complexities of moving to Germany. My mission is to provide raw, honest, and practical guidance that you won't get from commercial agencies.</p>
+                    <p>Whether it's the admission process, student life tips, or guidance on settling in, I'm here to ensure your transition to Germany is as smooth as possible. Let's build your future together.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center bg-slate-900 border-t border-white/5">
-        <p class="text-slate-500 text-xs font-bold tracking-[0.2em] uppercase">© 2026 RKR IN GERMANY | PROFESSIONAL MENTORSHIP</p>
+    <footer class="py-12 text-center bg-slate-900">
+        <p class="text-slate-500 text-[10px] font-bold tracking-[0.3em] uppercase">© 2026 RKR IN GERMANY | PROFESSIONAL GUIDE</p>
     </footer>
 
 </body>
